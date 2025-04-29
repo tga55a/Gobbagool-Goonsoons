@@ -1,1 +1,15 @@
 
+* Tralalero Tralala
+* Brr Brr Patapim
+* Lirili Larila
+* Boneca Ambalabu
+* Babrito Bandito
+* Lirili Larila
+* Ballerina Capuccina
+* Capuccino Assasino
+* Tung Tung Tung Sahur
+* Chimpanzini Bananini
+
+Player clicks button
+every time they click the button they start off with 1 gabagool
+they can use gabagools to purchase some of the characters
