@@ -1,7 +1,8 @@
 let bank = document.getElementById("bank")
 let gobbagool = document.getElementById("gobbagool")
 gobbagool.addEventListener("click", gobfunc)
-
+let perSecond = document.getElementById("perSecond")
+perSecond.textContent = "Gobs per second: 0"
 let Buttons = document.getElementById("Buttons")
 let gobs = 0
 let rate = 0
@@ -34,7 +35,7 @@ class Pet {
         Button.textContent = PetName
 
 
-        PetCost.textContent = `Cost: ${Cost}`
+        PetCost.textContent = `Cost: ${Cost} `
 
 
         this.PetName = PetName
@@ -64,6 +65,7 @@ class Pet {
                 // Update
                 rate += Object.Rate * Object.IncreaseRate
                 console.log(rate)
+                perSecond.textContent = `Gobs per second: ${rate.toFixed(2)}`
                 gobs -= Object.Cost
                 Object.Cost = (Object.Cost * (Object.IncreaseCost)).toFixed(0)
                 Object.Owned += 1
@@ -74,7 +76,7 @@ class Pet {
                 // bank.textContent = gobs.toFixed(2)
                 console.log(`${Object.PetName} owned `  + Object.Owned)
 
-                Object.PetCostElement.textContent =  `Cost: ${Object.Cost}`
+                Object.PetCostElement.textContent =  `Cost: ${Object.Cost}, Owned: ${Object.Owned}`
             }
             if (Object.Owned % Object.divisible === 0 && Object.Owned !== 0){
                 // Object.Cost += 1
@@ -87,16 +89,16 @@ class Pet {
 }
 
 let Pets = {
-    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.5, 5, 1.1, 1.1),
-    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo",25 , 2, 10, 1.2, 1.5),
-    "Brr Brr Patapim": new Pet("Brr Brr Patapim", 100, 5, 5, 1.5, 2.0),
-    "Boneca Ambalabu": new Pet("Boneca Ambalabu"),
-    "Bobrito Bandito": new Pet("Bobrito Bandito"),
-    "Lirili Larila": new Pet("Lirili Larila"),
-    "Ballerina Capuccina": new Pet("Ballerina Capuccina"),
-    "Cupuccino Assasino": new Pet("Cupuccino Assasino"),
-    "Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur": new Pet("Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur"),
-    "Chimpanzini Bananini": new Pet("Chimpanzini Bananini"),
+    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.5, 5, 1.5, 1.2),
+    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo",25 , 5, 10, 1.5, 2.0),
+    "Brr Brr Patapim": new Pet("Brr Brr Patapim", 100, 10, 5, 2.0, 2.8),
+    "Boneca Ambalabu": new Pet("Boneca Ambalabu",500, 20, 10, 2.0, 3.6),
+    "Bobrito Bandito": new Pet("Bobrito Bandito",750, 50, 5, 2.5, 4.4),
+    "Lirili Larila": new Pet("Lirili Larila", 1000, 100, 10, 2.5, 5.2),
+    "Ballerina Capuccina": new Pet("Ballerina Capuccina", 2500, 250, 5, 3.0, 6),
+    "Cupuccino Assasino": new Pet("Cupuccino Assasino", 5000, 500, 10, 3.0, 6.8),
+    "Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur": new Pet("Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur", 10000, 5000, 5, 3.5, 7.6 ),
+    "Chimpanzini Bananini": new Pet("Chimpanzini Bananini", 20000, 10000, 5, 3.5, 8.4),
 }
 
 
