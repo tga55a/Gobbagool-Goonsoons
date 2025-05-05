@@ -25,7 +25,7 @@ let rate = 0
 
 
 class Pet {
-    constructor(PetName, Cost, Rate, divisible, IncreaseBy) {
+    constructor(PetName, Cost, Rate, divisible, IncreaseCost, IncreaseRate) {
 
         let Div = document.createElement("div")
         let Button = document.createElement("button")
@@ -42,7 +42,8 @@ class Pet {
         this.Owned = 0
         this.Rate = Rate
         this.divisible = divisible
-        this.IncreaseBy = IncreaseBy
+        this.IncreaseCost = IncreaseCost
+        this.IncreaseRate = IncreaseRate
         this.PetCostElement = PetCost
 
         
@@ -55,25 +56,23 @@ class Pet {
     }
 
     update() {
-        console.log("workinggg")
 
         let Object = this
-
-        console.log(Object.Cost)
         
         return function() {
             if (gobs >= Object.Cost){
                 // Update
-                rate += Object.Rate
+                rate += Object.Rate * Object.IncreaseRate
+                console.log(rate)
                 gobs -= Object.Cost
-                Object.Cost = (Object.Cost * (Object.IncreaseBy)).toFixed(0)
+                Object.Cost = (Object.Cost * (Object.IncreaseCost)).toFixed(0)
                 Object.Owned += 1
 
                 console.log(Object.Cost)
     
                 // Display
                 // bank.textContent = gobs.toFixed(2)
-                console.log("tral owned " + Object.Owned)
+                console.log(`${Object.PetName} owned `  + Object.Owned)
 
                 Object.PetCostElement.textContent =  `Cost: ${Object.Cost}`
             }
@@ -88,9 +87,9 @@ class Pet {
 }
 
 let Pets = {
-    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.1, 5, 1.1),
-    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo"),
-    "Brr Brr Patapim": new Pet("Brr Brr Patapim"),
+    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.5, 5, 1.1, 1.1),
+    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo",25 , 2, 10, 1.2, 1.5),
+    "Brr Brr Patapim": new Pet("Brr Brr Patapim", 100, 5, 5, 1.5, 2.0),
     "Boneca Ambalabu": new Pet("Boneca Ambalabu"),
     "Bobrito Bandito": new Pet("Bobrito Bandito"),
     "Lirili Larila": new Pet("Lirili Larila"),
@@ -100,9 +99,6 @@ let Pets = {
     "Chimpanzini Bananini": new Pet("Chimpanzini Bananini"),
 }
 
-for (Pet in Pets) {
-    console.log(Pet)
-}
 
 
 function gobfunc(){
