@@ -89,16 +89,16 @@ class Pet {
 }
 
 let Pets = {
-    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.5, 5, 1.5, 1.2),
-    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo",25 , 5, 10, 1.5, 2.0),
-    "Brr Brr Patapim": new Pet("Brr Brr Patapim", 100, 10, 5, 2.0, 2.8),
-    "Boneca Ambalabu": new Pet("Boneca Ambalabu",500, 20, 10, 2.0, 3.6),
-    "Bobrito Bandito": new Pet("Bobrito Bandito",750, 50, 5, 2.5, 4.4),
-    "Lirili Larila": new Pet("Lirili Larila", 1000, 100, 10, 2.5, 5.2),
-    "Ballerina Capuccina": new Pet("Ballerina Capuccina", 2500, 250, 5, 3.0, 6),
-    "Cupuccino Assasino": new Pet("Cupuccino Assasino", 5000, 500, 10, 3.0, 6.8),
-    "Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur": new Pet("Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur", 10000, 5000, 5, 3.5, 7.6 ),
-    "Chimpanzini Bananini": new Pet("Chimpanzini Bananini", 20000, 10000, 5, 3.5, 8.4),
+    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.5, 5, 1.5, 1.1),
+    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo",25 , 5, 10, 1.5, 1.6),
+    "Brr Brr Patapim": new Pet("Brr Brr Patapim", 100, 10, 5, 2.0, 2.1),
+    "Boneca Ambalabu": new Pet("Boneca Ambalabu",500, 20, 10, 2.0, 2.6),
+    "Bobrito Bandito": new Pet("Bobrito Bandito",750, 50, 5, 2.5, 3.1),
+    "Lirili Larila": new Pet("Lirili Larila", 1000, 100, 10, 2.5, 3.6),
+    "Ballerina Capuccina": new Pet("Ballerina Capuccina", 2500, 250, 5, 3.0, 4.1),
+    "Cupuccino Assasino": new Pet("Cupuccino Assasino", 5000, 500, 10, 3.0, 4.6),
+    "Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur": new Pet("Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur", 10000, 5000, 5, 3.5, 5.1 ),
+    "Chimpanzini Bananini": new Pet("Chimpanzini Bananini", 20000, 10000, 5, 3.5, 5.6),
 }
 
 
