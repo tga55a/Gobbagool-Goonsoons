@@ -1,11 +1,17 @@
 
 #title{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
     justify-content: center;
     align-items: center;
+    color: #f25c5a;
+    font-weight: bolder;
+    background-color: #1b1e31;
+    padding: none;
 }
 
 body{
-    background-color: blue;
+    background-color: #9a8d98;
 }
 
 #collums{
@@ -15,12 +21,17 @@ body{
 #bank{
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
+    font-weight: bolder;
+    color: #f2a163;
+    padding: none;
 }
 
 #perSecond{
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
-
+    font-weight: bolder;
+    color: #f2a163;
+    padding: none;
 }
 
 #clicky{
@@ -28,10 +39,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: none;
 }
 
 #Buttons{
     display: flex;
     flex-direction: column;
-
+    background-color: #4a4e68;
+    padding: none;
 }
