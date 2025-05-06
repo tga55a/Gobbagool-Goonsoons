@@ -1,0 +1,37 @@
+
+#title{
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: blue;
+}
+
+#collums{
+    display: flex;
+}
+
+#bank{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+#perSecond{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+
+}
+
+#clicky{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Buttons{
+    display: flex;
+    flex-direction: column;
+
+}
