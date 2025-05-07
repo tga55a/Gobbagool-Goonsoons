@@ -4,6 +4,8 @@ const gobbagool = document.getElementById("gobbagool")
 const perSecond = document.getElementById("perSecond")
 const Buttons = document.getElementById("Buttons")
 const dumbPet = document.getElementById("dumbpet")
+const video = document.getElementById("video")
+const help = document.getElementById("Help")
 dumbPet.style.visibility = "hidden"
 // Variables
 let totalOwned = 0
@@ -257,3 +259,8 @@ function showdumbpet() {
 }
 
 setTimeout(showdumbpet, 10000)
+
+help.addEventListener("click", showHelp)
+function showHelp(){
+    window.open("https://drive.google.com/file/d/1J7r8kD7g3lcPRikv68tumc0-5NQuJqx1/view?usp=sharing")
+}
