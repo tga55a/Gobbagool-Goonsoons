@@ -26,14 +26,20 @@ let rate = 0
 
 
 class Pet {
-    constructor(PetName, Cost, Rate, divisible, IncreaseCost, IncreaseRate) {
+    constructor(PetName, Cost, Rate, divisible, IncreaseCost, IncreaseRate, img) {
 
         let Div = document.createElement("div")
         let Button = document.createElement("button")
+        let imgel = document.createElement("img")
+        imgel.setAttribute("src", img)
+        Button.appendChild(imgel)
         let PetCost = document.createElement("p")
-        Div.append(Button, PetCost)
         Button.textContent = PetName
-
+        
+        if (PetName !== "Gobbagool Goonsoon"){
+            Div.append(Button, PetCost)
+        }
+        
 
         PetCost.textContent = `Cost: ${Cost} `
 
@@ -46,6 +52,8 @@ class Pet {
         this.IncreaseCost = IncreaseCost
         this.IncreaseRate = IncreaseRate
         this.PetCostElement = PetCost
+        this.Div = Div
+        this.button = Button
 
         
 
@@ -64,13 +72,15 @@ class Pet {
             if (gobs >= Object.Cost){
                 // Update
                 rate += Object.Rate * Object.IncreaseRate
-                console.log(rate)
                 perSecond.textContent = `Gobs per second: ${rate.toFixed(2)}`
                 gobs -= Object.Cost
                 Object.Cost = (Object.Cost * (Object.IncreaseCost)).toFixed(0)
                 Object.Owned += 1
 
-                console.log(Object.Cost)
+                if(gobs >= 100000000 && checked === false){
+                    Pets["Gobbagool Goonson"].Div.append(Pets["Gobbagool Goonson"].button, Pets["Gobbagool Goonson"].PetCostElement)
+                    checked = true
+                }   
     
                 // Display
                 // bank.textContent = gobs.toFixed(2)
@@ -89,34 +99,41 @@ class Pet {
 }
 
 let Pets = {
-    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.5, 5, 1.5, 1.1),
-    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo",25 , 5, 10, 1.5, 1.6),
-    "Brr Brr Patapim": new Pet("Brr Brr Patapim", 100, 10, 5, 2.0, 2.1),
-    "Boneca Ambalabu": new Pet("Boneca Ambalabu",500, 20, 10, 2.0, 2.6),
-    "Bobrito Bandito": new Pet("Bobrito Bandito",750, 50, 5, 2.5, 3.1),
-    "Lirili Larila": new Pet("Lirili Larila", 1000, 100, 10, 2.5, 3.6),
-    "Ballerina Capuccina": new Pet("Ballerina Capuccina", 2500, 250, 5, 3.0, 4.1),
-    "Cupuccino Assasino": new Pet("Cupuccino Assasino", 5000, 500, 10, 3.0, 4.6),
-    "Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur": new Pet("Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur", 10000, 5000, 5, 3.5, 5.1 ),
-    "Chimpanzini Bananini": new Pet("Chimpanzini Bananini", 20000, 10000, 5, 3.5, 5.6),
+    "Tralalero Tralala": new Pet("Tralalero Tralala", 5, 0.5, 10, 1.5, 1.1, "FinalTralalaF1.png"),
+    "Bombardiro Crocodilo": new Pet("Bombardiro Crocodilo",100 , 5, 10, 1.5, 1.6, "FinalCrocF1.png"),
+    "Brr Brr Patapim": new Pet("Brr Brr Patapim", 1000, 10, 10, 2.0, 2.1, "RoughBushManMonkey.png"),
+    "Boneca Ambalabu": new Pet("Boneca Ambalabu",5000, 20, 10, 2.0, 2.6, "FinalFrogF1.png"),
+    "Bobrito Bandito": new Pet("Bobrito Bandito",25000, 50, 10, 2.5, 3.1, "FinalMafiaBeaverF1.png"),
+    "Lirili Larila": new Pet("Lirili Larila", 100000, 100, 10, 2.5, 3.6, "RoughCactusElephant.png"),
+    "Ballerina Capuccina": new Pet("Ballerina Capuccina", 400000, 250, 10, 3.0, 4.1, "FinalBalletF1.png"),
+    "Cupuccino Assasino": new Pet("Cupuccino Assasino", 750000, 500, 10, 3.0, 4.6, "FinalNinjaF1.png"),
+    "Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur": new Pet("Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur", 1000000, 5000, 10, 3.5, 5.1, "TungTungRough.png"),
+    "Chimpanzini Bananini": new Pet("Chimpanzini Bananini", 5000000, 10000, 10, 3.5, 5.6, "FinalBananaF1.png"),
+    "Gobbagool Goonson": new Pet("Gobbagool Goonsoon", 1000000000, 1000000000, 1, 1, 1, "FinalGabaGool.png")
 }
 
 
-
+let totalOwned = 0
 function gobfunc(){
-    gobs += 1
+    gobs += 1 + (totalOwned / 2)
     bank.textContent = gobs.toFixed(2)
+
+
 }
+
 
 function increase(){
+    totalOwned = 0
     gobs += rate
     bank.textContent = gobs.toFixed(2)
     setTimeout(increase, 1000);
+    for (let pet in Pets){
+        totalOwned += Pets[pet].Owned
+    }
+    
 }
 
 increase()
 
 
-
-
-
+let checked = false
