@@ -32,9 +32,10 @@ class Pet {
         let Button = document.createElement("button")
         let imgel = document.createElement("img")
         imgel.setAttribute("src", img)
-        Button.appendChild(imgel)
+        Button.append(imgel)
+
         let PetCost = document.createElement("p")
-        Button.textContent = PetName
+        Button.innerHTML += PetName
         
         if (PetName !== "Gobbagool Goonsoon"){
             Div.append(Button, PetCost)
