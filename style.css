@@ -74,10 +74,6 @@ button:hover { /* Formats the buttons when you hover over them */
     height: 700px;
     width: 700px;
 }
-#gobbagool:active{
-    height: 800px;
-    width: 800px;
-}
 
 /* formats the img of the gobba gool*/
 #gobbaImg{
@@ -87,6 +83,12 @@ button:hover { /* Formats the buttons when you hover over them */
 #gobbaImg:hover{
     height: 700px;
     width: 700px;
+}
+#gobbaImg:active{
+    height: 800px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* makes sure that the flexboxes are next to eachother*/
