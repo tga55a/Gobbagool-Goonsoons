@@ -71,6 +71,10 @@ button:hover { /* Formats the buttons when you hover over them */
 #gobbagool:hover{ /* makes sure that the button formating doesn't apply when hovered, also resizes it when hoverd*/
     background-color: #9a8d98;
     border: none;
+    height: 700px;
+    width: 700px;
+}
+#gobbagool:active{
     height: 800px;
     width: 800px;
 }
@@ -81,8 +85,8 @@ button:hover { /* Formats the buttons when you hover over them */
     width: auto;
 }
 #gobbaImg:hover{
-    height: 800px;
-    width: 800px;
+    height: 700px;
+    width: 700px;
 }
 
 /* makes sure that the flexboxes are next to eachother*/
