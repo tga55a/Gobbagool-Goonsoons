@@ -15,13 +15,24 @@ body{ /* Colors the body*/
     font-size: xx-large;
 }
 
+#Help{
+    height: 50px;
+    width: 100px;
+    color: #9a8d98;
+}
+
+#Help:hover{
+    background-color: #f25c5a;
+    color: #4a4e68;
+}
+
 img { /* Formats the images */
     height: 100px;
     width: 100px;
 }
 
 p{ /* Formats the paragraphs */
-    color: #1b1e31;
+    color: #f2a163;
 }
 
 button { /* Formats the buttons */
