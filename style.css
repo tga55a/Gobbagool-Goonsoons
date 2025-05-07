@@ -8,6 +8,27 @@
     font-weight: bolder;
     background-color: #1b1e31;
     padding: none;
+    font-size: xx-large;
+}
+
+button {
+    background-color: #f25c5a;
+    color: #1b1e31;
+    transition-delay: 0.4s;
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #1b1e31;
+    color: #f25c5a;
+    border-color: #f25c5a;
+
 }
 
 body{
@@ -16,6 +37,7 @@ body{
 
 #collums{
     display: flex;
+    flex-wrap: wrap;
 }
 
 #bank{
@@ -39,7 +61,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: none;
+    padding: 20px;
 }
 
 #Buttons{
@@ -47,4 +69,17 @@ body{
     flex-direction: column;
     background-color: #4a4e68;
     padding: none;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 800px;
+}
+
+#gobbagool{
+    border-radius: 12px;
+    background-color: #4a4e68;
+    color: #f25c5a;
+}
+
+#gobbaImg{
+    size: 600px;
 }
