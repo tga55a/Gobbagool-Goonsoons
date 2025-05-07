@@ -111,7 +111,7 @@ let Pets = {
         5, // Cost
         0.5, // Rate
         10, // Divisible ()
-        1.5, // Increase Cost Rate
+        1.2, // Increase Cost Rate
         1.1, // Increase Rate
         "FinalTralalaF1.png" // Pet Image
     ),
@@ -121,7 +121,7 @@ let Pets = {
         100 , 
         5, 
         10, 
-        1.5, 
+        1.2, 
         1.6, 
         "FinalCrocF1.png"
     ),
@@ -131,7 +131,7 @@ let Pets = {
         1000, 
         10, 
         10, 
-        2.0, 
+        1.2, 
         2.1, 
         "RoughBushManMonkey.png"
     ),
@@ -141,7 +141,7 @@ let Pets = {
         5000, 
         20, 
         10, 
-        2.0, 
+        1.2, 
         2.6, 
         "FinalFrogF1.png"
     ),
@@ -151,7 +151,7 @@ let Pets = {
         25000, 
         50, 
         10, 
-        2.5, 
+        1.2, 
         3.1, 
         "FinalMafiaBeaverF1.png"
     ),
@@ -161,7 +161,7 @@ let Pets = {
         100000, 
         100, 
         10, 
-        2.5, 
+        1.2, 
         3.6, 
         "RoughCactusElephant.png"
     ),
@@ -171,7 +171,7 @@ let Pets = {
         400000, 
         250, 
         10, 
-        3.0, 
+        1.2, 
         4.1, 
         "FinalBalletF1.png"
     ),
@@ -180,7 +180,7 @@ let Pets = {
         "Cupuccino Assasino", 
         750000, 500, 
         10, 
-        3.0, 
+        1.2, 
         4.6, 
         "FinalNinjaF1.png"
     ),
@@ -190,7 +190,7 @@ let Pets = {
         1000000, 
         5000, 
         10, 
-        3.5, 
+        1.2, 
         5.1, 
         "TungTungRough.png"
     ),
@@ -200,7 +200,7 @@ let Pets = {
         5000000, 
         10000, 
         10, 
-        3.5, 
+        1.2, 
         5.6, 
         "FinalBananaF1.png"
     ),
