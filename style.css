@@ -1,9 +1,9 @@
 
-body{
+body{ /* Colors the body*/
     background-color: #1b1e31;
 }
 
-#title{
+#title{ /* Formats the title */
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
@@ -15,26 +15,31 @@ body{
     font-size: xx-large;
 }
 
-img {
+img { /* Formats the images */
     height: 100px;
     width: 100px;
 }
 
-button {
+p{ /* Formats the paragraphs */
+    color: #1b1e31;
+}
+
+button { /* Formats the buttons */
     background-color: #1b1e31;
     color: #1b1e31;
     transition-delay: 0.4s;
     height: 100px;
     width: 100px;
+    border-radius: 12px;
 }
 
-button:hover {
+button:hover { /* Formats the buttons when you hover over them */
     color: #f25c5a;
     border-color: #f25c5a;
 
 }
 
-#Buttons{
+#Buttons{ /* Formats the collection of buttons (Flexbox) */
     display: flex;
     flex-direction: column;
     background-color: #4a4e68;
@@ -46,7 +51,7 @@ button:hover {
     flex: 10%;
 }
 
-#clicky{
+#clicky{/* Formats the gabagool section (flexbox) */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,35 +61,37 @@ button:hover {
     flex: 70%;
 }
 
-#gobbagool{
+#gobbagool{ /* Formats the gobba gool clicky */
     background-color: #9a8d98;
     border: none;
     height: 600px;
     width: 600px;
     transition: 0.5s;
 }
-#gobbagool:hover{
+#gobbagool:hover{ /* makes sure that the button formating doesn't apply when hovered, also resizes it when hoverd*/
     background-color: #9a8d98;
     border: none;
-    height: 700px;
-    width: 700px;
+    height: 800px;
+    width: 800px;
 }
 
-
+/* formats the img of the gobba gool*/
 #gobbaImg{
     height: auto;
     width: auto;
 }
 #gobbaImg:hover{
-    height: 700px;
-    width: 700px;
+    height: 800px;
+    width: 800px;
 }
 
+/* makes sure that the flexboxes are next to eachother*/
 #collums{
     display: flex;
     flex-wrap: wrap;
 }
 
+/* formats the counter*/
 #bank{
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
@@ -93,6 +100,7 @@ button:hover {
     padding: none;
 }
 
+/* formats the perSecond counter*/
 #perSecond{
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
