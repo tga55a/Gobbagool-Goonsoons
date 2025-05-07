@@ -48,7 +48,7 @@ button:hover { /* Formats the buttons when you hover over them */
     width: 500px;
     height: 800px;
     justify-content: space-evenly;
-    flex: 10%;
+    flex: 30%;
 }
 
 #clicky{/* Formats the gabagool section (flexbox) */
@@ -58,7 +58,7 @@ button:hover { /* Formats the buttons when you hover over them */
     align-items: center;
     padding: 20px;
     background-color: #9a8d98;
-    flex: 70%;
+    flex: 50%;
 }
 
 #gobbagool{ /* Formats the gobba gool clicky */
