@@ -18,7 +18,7 @@ let checked = false
 
 
 function GobOnClicked() {
-    gobs += 1 + (totalOwned / 2)
+    gobs += 1 + (totalOwned / 4)
     bank.textContent = gobs.toFixed(2)
 }
 
